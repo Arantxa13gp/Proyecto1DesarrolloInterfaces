@@ -1,5 +1,5 @@
 package org.example.project.models
-data class GaleriaArte(
+data class GaleriaArteModel(
     var id: Int,
     var titulo: String,
     var artista: String,
