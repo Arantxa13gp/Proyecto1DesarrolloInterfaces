@@ -21,7 +21,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.example.project.models.GaleriaArte
+import org.example.project.models.GaleriaArteModel
 import org.example.project.viewModels.GaleriaArteVM
 
 @Composable
@@ -31,7 +31,7 @@ fun GaleriaArteScreen(
     val uiState by viewModel.uiState.collectAsState()
 
     var obraSeleccionada by remember {
-        mutableStateOf<GaleriaArte?>(null)
+        mutableStateOf<GaleriaArteModel?>(null)
     }
 
     Scaffold(

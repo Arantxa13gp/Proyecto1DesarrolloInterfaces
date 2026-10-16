@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
-import org.example.project.models.GaleriaArte
+import org.example.project.models.GaleriaArteModel
 import org.example.project.states.GaleriaArteState
 
 class GaleriaArteVM : ViewModel() {
@@ -18,14 +18,14 @@ class GaleriaArteVM : ViewModel() {
 
     private fun loadInitialData() {
         val obras = listOf(
-            GaleriaArte(
+            GaleriaArteModel(
                 id = 1,
                 titulo = "La noche estrellada",
                 artista = "Vincent van Gogh",
                 añoCreacion = 1889,
                 descripcion = "Pintura al óleo que representa un paisaje nocturno con un cielo lleno de estrellas y una pequeña localidad."
             ),
-            GaleriaArte(
+            GaleriaArteModel(
                 id = 2,
                 titulo = "La Gioconda",
                 artista = "Leonardo da Vinci",
